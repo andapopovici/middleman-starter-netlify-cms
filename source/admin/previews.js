@@ -93,3 +93,7 @@ CMS.registerPreviewTemplate('blog', BlogPreview)
 CMS.registerPreviewTemplate('product', ProductPreview)
 CMS.registerPreviewTemplate('home', HomePreview)
 CMS.registerPreviewTemplate('navigation', NavigationPreview)
+
+import uploadcare from 'netlify-cms-media-library-uploadcare';
+
+CMS.registerMediaLibrary(uploadcare);

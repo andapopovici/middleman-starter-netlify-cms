@@ -1,3 +1,5 @@
+import uploadcare from 'netlify-cms-media-library-uploadcare';
+
 const BlogPreview = ({ entry, widgetFor }) => {
   const data = entry.get('data').toJS()
   const date = dayjs(data.date).format('DD-MM-YY')
@@ -93,7 +95,5 @@ CMS.registerPreviewTemplate('blog', BlogPreview)
 CMS.registerPreviewTemplate('product', ProductPreview)
 CMS.registerPreviewTemplate('home', HomePreview)
 CMS.registerPreviewTemplate('navigation', NavigationPreview)
-
-import uploadcare from 'netlify-cms-media-library-uploadcare';
 
 CMS.registerMediaLibrary(uploadcare);

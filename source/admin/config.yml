@@ -1,7 +1,10 @@
 backend:
   name: git-gateway
 
-media_folder: source/images/uploads
+media_library:
+  name: uploadcare
+  config:
+    publicKey: 86ef02377f5f3014ed32 # replace with your Public API key or use for testing env only
 public_folder: /images/uploads
 
 #publish_mode: editorial_workflow #optional, enables publishing workflow
